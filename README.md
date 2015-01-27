@@ -39,14 +39,16 @@ A 21st century SMTP replacement.
   * there is only one authorative source for public keys: the domain that actually handles email for a particular user
   	  * example: <user@domain.com> will be handled by domain.com
 	  * example: <user@user.me> will be handled by domain.com, because the MX of user.me points to domain.com
-  * domains have a primary key store for their own users (and hosted users, see above) and a secondary store that acts like a cache for themselves, and can be made public
+  * domains have a primary key store for their own users (and hosted users, see above) and a secondary store that acts like a cache for themselves, and that can be made public
 * spam
   * whitelist/blacklist for domains
+  * difficult, since now spammers can send totally opaque emails
+  	* http://blog.cloudmark.com/2014/11/13/spam-filtering-for-dime-encrypted-email/
 * DDoS
   * huge messages, a lot of requests
 * improving email providers security
   * out of the scope of intermail, but it's an easy target for attackers that renders intermail's security benefits moot
-  * publish best pracices for storing email
+  * publish best practices for storing email
   * publish pgp and zero knowledge libs
   * publish automated solutions for setting up a server securely
   * ultimately, publish better oss alternatives to dovecot, iredmail, etc.
@@ -67,7 +69,7 @@ SMTP is a chatty, primitive protocol.
 ### PGP-enabled
 
 As mentioned previously, if PGP is enabled on the receiving side, the public keys
-can be obtained semalessly from the primary key store.
+can be obtained seamlessly from the primary key store.
 
 The approach is *way* simpler than `google/end-to-end` or DIME, because it's based on
 a simple observation:
