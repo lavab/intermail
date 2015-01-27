@@ -82,12 +82,12 @@ trust it with your private information?
 * maximize adoption
 * leverage existing architecture
   * don't reinvent the wheel, especially if it's a *crypto* wheel
-  * relies on TLS, PGP, MX and PTR records, and other to do the heavy lifting
+  * relies on TLS, PGP, MX and PTR records, etc. to do the heavy lifting
 
 ## Misc
 
 * assume TLS is broken, server is hacked, users/devs/webmaster are complete morons
-* marketing wins protocol wars (pond, everyone?)
+* marketing wins protocol wars (pond, anyone?)
 
 ### Attention needed
 
